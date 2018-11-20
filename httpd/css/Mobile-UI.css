@@ -1,0 +1,250 @@
+body {
+  background-color: rgb(65, 69, 76);
+}
+
+#map{
+  z-index: -1;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#dock {
+  z-index: 0;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  display: table;
+  width: 100%;
+  height: 50px;
+}
+
+.opt {
+  padding-top: 18px;
+  text-align: center;
+  background-color: rgb(72, 77, 86);
+  top: 50%;
+  display: table-cell;
+  border: 1px solid black;
+}
+
+.opt:hover{
+  background-color: rgb(88, 97, 112);
+}
+
+.optwin {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+  overflow: auto;
+  width: 98%;
+  height: auto;
+  visibility: hidden;
+}
+
+.optwin-content {
+  visibility: hidden;
+  height: auto;
+  width: 98%;
+  border: 1px solid black;
+}
+
+.optwin-content-open{
+  visibility: visible;
+}
+
+.optwin-open {
+  bottom: 50px;
+  left: 0px;
+  background-color: rgb(72, 77, 86);
+  border: 1px solid black;
+  height: 85%;
+  visibility: visible;
+}
+
+.controlbutton{
+  font-family: monospace;
+  text-align: center;
+  border: 1px solid black;
+  display: inline-block;
+  background-color: gray;
+  margin: 2px;
+  height: 20px;
+}
+
+.devMain{
+  display: table;
+  width: 100%;
+}
+
+.devMain:hover{
+  background-color: rgb(88, 97, 112);
+}
+
+.devAP{
+  background-color: white;
+}
+
+.devInfo{
+  font-family: monospace;
+  display: table-cell;
+  text-align: center;
+  border: 1px solid black;
+  width: 16%;
+}
+
+.devCli{
+  background-color: green;
+}
+
+.controlbutton:hover{
+  background-color: slategray;
+}
+
+.controlbutton-clicked{
+  background-color: rgb(85, 84, 84);
+}
+
+.intferror{
+  font-family: monospace;
+  text-align: center;
+  border: 1px solid black;
+  background-color: gray;
+  display: inline-block;
+  margin: 2px;
+  height: 20px;
+  width: 85px;
+
+}
+
+.intferror-clicked{
+  width: 75%;
+}
+
+.alert{
+  display: table;
+  width: 98%;
+}
+
+.alertinfo{
+  display: table-cell;
+  border: 1px solid black;
+}
+
+.quickopts {
+  font-family: monospace;
+  text-align: center;
+  border: 1px solid black;
+  background-color: rgb(54, 97, 165);
+  display: inline-block;
+  margin: 2px;
+  height: 20px;
+  width: 85px;
+}
+
+.quickopts-clicked {
+  background-color: rgb(39, 69, 117);
+}
+
+.chan {
+  font-family: monospace;
+  text-align: center;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 2px;
+  height: 20px;
+  width: 85px;
+}
+
+.syschan-active{
+  background-color: gray;
+  animation: pulse 2s infinite;
+}
+
+.userchan-active{
+  background-color: rgb(39, 69, 117);
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(0,255,255, 0.4);
+    box-shadow: 0 0 0 0 rgba(0,255,255, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(0,255,255, 0);
+      box-shadow: 0 0 0 10px rgba(0,255,255, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(0,255,255, 0);
+      box-shadow: 0 0 0 0 rgba(0,255,255, 0);
+  }
+}
+
+.stats{
+  float: left;
+}
+
+.stats-item{
+  display: inline-block;
+}
+
+.main-time{
+  display: inline-block;
+  width: 98%;
+}
+
+.main-item{
+  border: 1px solid black;
+  display: inline-block;
+}
+
+#iconboard{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: rgb(0,255,255, .2);
+  height: 18px;
+  width: 100%;
+}
+
+.time{
+  float: left;
+  padding-right: 10px;
+}
+
+
+.battery{
+  float: right;
+  font-family: monospace;
+}
+
+.bitem{
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+#battcon{
+  display: inline-block;
+  margin-top: 3px;
+  height: 12px;
+  width: 30px;
+  border: 1px solid black;
+}
+
+#battInd{
+  color: cyan;
+  height: 12px;
+  background-color: green;
+}
+
+.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}

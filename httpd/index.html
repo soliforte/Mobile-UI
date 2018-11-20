@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kismet Mobile</title>
+
+  <!-- Local includes from our relative js dir -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/fontawesome-all.min.js"></script>
+  <script src="js/Mobile-UI.js"></script>
+
+  <!--- Local includes from our relative css dir --->
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+  <link rel="stylesheet" href="css/leaflet.css">
+  <link rel="stylesheet" href="css/Mobile-UI.css">
+
+
+</head>
+
+<body>
+
+<div id="map"></div>
+<div id="iconboard">
+  <div id="time" class="time">
+    <div id="currtime"></div>
+  </div>
+  <div id="stats" class="stats">
+    <div id="devcount" class="stats-item"></div>
+  </div>
+  <div id="battery" class="battery">
+    <div id="battperc" class="bitem"></div>
+    <div id="battcon">
+      <div id="battInd"></div>
+    </div>
+    <div id="battcharging" class="bitem"></div>
+</div>
+</div>
+
+<div id="dock">
+  <div id="opt1" class="opt"><i class="fas fa-list"></i></div>
+  <div id="opt2" class="opt"><i class="fas fa-wifi"></i></div>
+  <div id="opt3" class="opt"><i class="fas fa-microchip"></i></div>
+  <div id="opt4" class="opt"><i class="fas fa-exclamation-triangle"></i></div>
+</div>
+
+<div id="opt1win" class="optwin"><fieldset id="opt1win-content" class="optwin-content"><legend>Devices</legend>
+  
+  </fieldset>
+</div>
+
+<div id="opt2win" class="optwin">
+  <fieldset id="opt2win-content" class="optwin-content">
+    <legend>Datasources</legend>
+  </fieldset>
+</div>
+<div id="opt3win" class="optwin"><fieldset id="opt3win-content" class="optwin-content">
+  <legend>Plugins</legend>
+</fieldset>
+</div>
+<div id="opt4win" class="optwin">
+  <fieldset id="opt4win-content" class="optwin-content">
+    <legend>Alerts</legend>
+    <fieldset class="alerts"></fieldset>
+  </fieldset>
+</div>
+
+</body>
+
+
+
+
+</html>
